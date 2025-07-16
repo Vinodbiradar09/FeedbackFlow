@@ -35,6 +35,10 @@
                 message : 'Role must eithere manager or employee',
             }
         },
+        userProfile : {
+            type : String,
+            required : true,
+        },
         isActive : {
             type : Boolean,
             default : true,
@@ -42,6 +46,9 @@
         lastLogin : {
             type : Date,
             default : null,
+        },
+        refreshTokens : {
+            type : String,
         }
      } , 
     {timestamps:true}
